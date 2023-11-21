@@ -15,7 +15,6 @@ import axios from 'axios';
 import { AuthContext } from "../context/AuthContext";
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
-import { YOUR_OPENCAGE_API_KEY } from "../utils/config";
 
 const TourDetails = () => {
   const { id } = useParams();
@@ -47,7 +46,7 @@ const TourDetails = () => {
         }
   
         const response = await geocode({
-          key: YOUR_OPENCAGE_API_KEY,
+          key: process.env.REACT_APP_YOUR_OPENCAGE_API_KEYe,
           q: city,
         });
   
