@@ -74,7 +74,7 @@ const TourDetails = () => {
 
         const response = await axios.get(`https://weather-api-by-any-city.p.rapidapi.com/weather/${city}`, {
           headers: {
-            'X-RapidAPI-Key': '688c7d00fdmshf26ceb64225f4e0p1c3004jsn72834c6e2472',
+            'X-RapidAPI-Key': '882d4b945dmsh85e48089ba7c1d6p103948jsn83841530d109',
             'X-RapidAPI-Host': 'weather-api-by-any-city.p.rapidapi.com',
           },
         });
